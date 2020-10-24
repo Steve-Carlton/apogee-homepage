@@ -14,8 +14,8 @@ body {
 header {
   height: 20rem;
   background-color: black;
-  background: rgb(147,100,140);
-  background: linear-gradient(0deg, rgba(147,100,140,1) 0%, rgba(122,74,83,1) 34%, rgba(0,0,0,1) 90%);
+  background: rgb(31,21,51);
+  /* background: linear-gradient(0deg, rgba(147,100,140,1) 0%, rgba(122,74,83,1) 34%, rgba(0,0,0,1) 90%); */
   background-image: url(./images/ready/header256-sml.png);
   background-repeat: no-repeat;
   background-position: center, left;
@@ -49,8 +49,8 @@ header .logo {
   justify-content: left;
   align-items: center;
   flex-wrap: wrap;
-  height: auto;
-  padding: 1%;
+  /* height: auto; */
+  /* padding: 1%; */
   background: linear-gradient(0deg, rgba(255,255,255,0.0) 0%, rgba(255,255,255,1) 30%);
 }
 
@@ -336,8 +336,21 @@ footer > address {
 
   .services, .talent {
     font-size: 1.7rem;
+    padding: 8% 5% 6%;
   }
 
+  .talent {
+    font-size: 2.5rem;
+  }
+
+  footer {
+    padding-top: 10%;
+    border: 8px solid red;
+  }
+
+  footer h3 {
+    line-height: 3.5rem;
+  }
 }
 
 @media screen and (max-width: 499px) and (min-width: 433px) {
@@ -366,6 +379,15 @@ footer > address {
     font-size: 1.8rem;
     padding: 5%;
   }
+
+  footer {
+    padding-top: 10%;
+    border: 8px solid red;
+  }
+
+  footer h3 {
+    line-height: 3.5rem;
+  }
 }
 
 @media screen and (max-width: 780px) and (min-width: 500px) {
@@ -384,9 +406,18 @@ footer > address {
     font-size: 3rem;
   }
 
+  .topnav, .topnav a {
+    justify-content: center;
+  }
+
   .mission h2 {
     font-size: 1.8rem;
     padding: 5%;
+  }
+
+  footer {
+    padding-top: 10%;
+    border: 8px solid red;
   }
 }
 
